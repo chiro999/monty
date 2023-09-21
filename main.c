@@ -1,4 +1,6 @@
+#define _POSIX_C_SOURCE 200809L
 #include "monty.h"
+
 monty_t monty = {NULL, NULL, NULL, 0}; 
 
 int main(int argc, char *argv[])
