@@ -1,17 +1,27 @@
 #include "monty.h"
+
 /**
  * free_stack - frees a doubly linked list
- * @head: head of the stack
+ * @head: pointer to the head of the stack
  */
 void free_stack(stack_t *head)
 {
-	stack_t *tmp;
+    /* Declare a temporary pointer to a stack node. */
+    stack_t *tmp;
 
-	tmp = head;
-	while (head)
-	{
-		tmp = head->next;
-		free(head);
-		head = tmp;
-	}
+    /* Initialize tmp with the head of the stack. */
+    tmp = head;
+
+    /* Start a loop to free each node in the doubly linked list. */
+    while (head)
+    {
+        /* Update tmp to the next node in the list. */
+        tmp = head->next;
+
+        /* Free the current node. */
+        free(head);
+
+        /* Move head to the next node. */
+        head = tmp;
+    }
 }
