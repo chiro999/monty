@@ -35,7 +35,7 @@ typedef struct monty_s
 	char *arg;
 	FILE *file;
 	char *content;
-	int lifi;
+	int ds;
 }  monty_t;
 extern monty_t monty;
 /**

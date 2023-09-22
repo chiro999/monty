@@ -49,7 +49,7 @@ void _push(stack_t **head, unsigned int counter)
     n = atoi(monty.arg);
 
     /* Check if it's a stack (LIFO) or queue (FIFO) operation and add the node accordingly. */
-    if (monty.lifi == 0)
+    if (monty.ds == 0)
         add_node(head, n);
     else
         add_queue(head, n);

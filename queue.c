@@ -14,7 +14,7 @@ void _queue(stack_t **head, unsigned int counter)
     (void)counter;
 
     /* Set the data structure to a queue (FIFO). */
-    monty.lifi = 1;
+    monty.ds = 1;
 }
 
 /**

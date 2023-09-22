@@ -14,5 +14,5 @@ void _stack(stack_t **head, unsigned int counter)
     (void)counter;
 
     /* Set the data structure to a stack (LIFO). */
-    monty.lifi = 0;
+    monty.ds = 0;
 }
