@@ -116,3 +116,11 @@ The result is stored in the second top element of the stack, and the top element
 The top element of the stack contains the result
 The stack is one element shorter
 If the top element of the stack is 0, print the error message L<line_number>: division by zero, followed by a new line, and exit with the status EXIT_FAILURE
+
+10. comments
+#advanced
+Every good language comes with the capability of commenting. When the first non-space character of a line is #, treat this line as a comment (don’t do anything).
+
+Repo:
+
+GitHub repository: monty
